@@ -8,6 +8,6 @@ metadata:
 spec:
   containers:
   - name: sample-ctr
-    image: doppal/myownimage:latest
+    image: doppal/myownimage:phpapp
     ports:
       - containerPort: 80
