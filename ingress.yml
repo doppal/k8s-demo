@@ -1,4 +1,4 @@
-apiVersion: apps/v1
+apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: myingress
@@ -6,17 +6,20 @@ metadata:
     name: myingress
 spec:
   rules:
-  - http:
+  - host: myapp.com
+    http:
       paths:
-      - path: "/cart"
+      - pathType: Prefix
+        path: "/cart"
         backend:
           service:
             name: svc1
-            port: 
+            port:
               number: 80
-      - path: "/products"
+      - pathType: Prefix
+        path: "/products"
         backend:
           service:
             name: svc2
-            port: 
+            port:
               number: 80
