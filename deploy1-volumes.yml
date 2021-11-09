@@ -22,6 +22,6 @@ spec:
         env:
         - name: CONF_USER
           valueFrom:
-            configMapKeyRef: 
-                 name: user-cred
-                 key: user
+            configMapKeyRef:
+              key: user
+              name: user-cred
