@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: sample-ctr
-        image: nginx
+        image: doppal/myimage:v2
         ports:
         - containerPort: 80
