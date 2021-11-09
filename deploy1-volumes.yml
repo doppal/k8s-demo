@@ -27,6 +27,6 @@ spec:
               name: user-cred
         - name: USER_PASS
           valueFrom: 
-            secretMapKeyRef: 
+            secretKeyRef: 
                   name: user-pwd
                   key: password
