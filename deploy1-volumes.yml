@@ -25,3 +25,8 @@ spec:
             configMapKeyRef:
               key: user
               name: user-cred
+        - name: USER_PASS
+          valueFrom: 
+            secretMapKeyRef: 
+                  name: user-pwd
+                  key: password
