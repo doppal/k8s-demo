@@ -1,5 +1,5 @@
 apiVersion: apps/v1
-Kind: Daemonset
+kind: daemonset
 metadata:
   name: prometheus-daemonset
 spec:
