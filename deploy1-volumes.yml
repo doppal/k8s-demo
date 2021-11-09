@@ -23,5 +23,5 @@ spec:
         - name: CONF_USER
           valueFrom:
             configMapKeyRef:
-              key: user
+              key: myuser
               name: user-cred
